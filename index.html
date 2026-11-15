@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanket U Yadav · AI Engineer &amp; Claude Transformation Engineer</title>
+  <meta name="description"
+    content="Portfolio of Sanket U Yadav — Data Analyst & BI Developer specializing in Power BI, SQL, Python, Excel automation, and executive dashboards." />
+
+  <!-- Google Fonts: Inter, Space Grotesk, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Obsidian · Chrome · Crimson Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header id="siteHeader">
+    <div class="wrap">
+      <div class="nav-row">
+        <a href="#home" class="logo-link" aria-label="Home">
+          <div class="logo-circle">SY</div>
+          <div>
+            <span class="logo-text">Sanket U Yadav</span>
+            <span class="logo-sub">AI Engineer &middot; RAG Developer &middot; LLM Developer</span>
+          </div>
+        </a>
+
+        <nav class="pill-nav" aria-label="Main Navigation">
+          <a href="#home" class="active">Home</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-right">
+          <a href="#contact" class="btn btn-primary nav-cta">
+            <i class="fa-solid fa-paper-plane"></i> Get in Touch
+          </a>
+          <button class="ham" id="hamBtn" onclick="toggleNav()" aria-label="Toggle navigation menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <nav class="mob-nav" id="mobNav" aria-label="Mobile Navigation">
+    <a href="#home" onclick="closeNav()">Home</a>
+    <a href="#services" onclick="closeNav()">Services</a>
+    <a href="#about" onclick="closeNav()">About</a>
+    <a href="#experience" onclick="closeNav()">Work Experience</a>
+    <a href="#education" onclick="closeNav()">Education</a>
+    <a href="#skills" onclick="closeNav()">Skills</a>
+    <a href="#projects" onclick="closeNav()">Projects</a>
+    <a href="#contact" onclick="closeNav()">Contact</a>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home">
+    <div class="hero-glow"></div>
+    <div class="hero-glow-secondary"></div>
+    <div class="wrap">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <div class="hero-status">
+            <span class="hero-status-dot"></span>
+            Available for full-time &amp; freelance
+          </div>
+
+          <span class="hero-greeting">// AI ENGINEER &amp; RAG DEVELOPER</span>
+
+          <h1 class="hero-h1">
+            Sanket<br />
+            <span class="chrome-text">U. Yadav</span>
+          </h1>
+
+          <div class="hero-role">
+            <span id="typedText">AI Engineer</span>
+            <span class="typed-cursor"></span>
+          </div>
+
+          <p class="hero-desc">
+            Design and develop intelligent applications by integrating machine learning models, Large Language Models
+            (LLMs), and
+            modern AI technologies. Focus on developing scalable AI solutions, integrating APIs, automating workflows,
+            and
+            transforming complex business requirements into practical, production-ready applications.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="Sanket Yadav Updated resume.pdf" class="btn btn-primary" download="Sanket_U_Yadav_Resume.pdf">
+              <i class="fa-solid fa-download"></i> Download CV
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <i class="fa-solid fa-cubes"></i> View Projects
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/sanket-yadav-6a1a2b272/?skipRedirect=true" class="social-btn"
+              target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="pf-frame">
+            <div class="pf-laser-border"></div>
+            <div class="pf-bg">
+              <img class="pf-img" src="profile.jpeg" alt="Sanket U Yadav" loading="eager" decoding="async" onerror="
+                    this.style.display = 'none';
+                    document.getElementById('pfSilhouette').style.display = 'flex';
+                  " />
+              <div class="pf-silhouette" id="pfSilhouette" style="display: none">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+            </div>
+
+            <!-- Floating Stats Badges -->
+            <div class="pf-badge">
+              <div class="pf-badge-icon">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <div>
+                <span class="pf-badge-num">7+</span>
+                <span class="pf-badge-lbl">Projects Built</span>
+              </div>
+            </div>
+
+            <div class="pf-badge-2">
+              <div class="pf-badge-2-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div>
+                <span class="pf-badge-num">1+</span>
+                <span class="pf-badge-lbl">Yrs Experience</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="laser-divider"></div>
+
+  <!-- SERVICES SECTION -->
+  <section id="services">
+    <div class="wrap">
+      <div class="s-head">
+        <div class="s-label">
+          <i class="fa-solid fa-layer-group"></i> Services
+        </div>
+        <h2 class="chrome-text">What I Do Best</h2>
+        <div class="s-laser"></div>
+        <p>
+          Designing intelligent systems that think, retrieve, reason, and automate.
+        </p>
+      </div>
+
+      <div class="svc-grid">
+        <div class="svc-card reveal">
+          <div class="svc-num">01 // AI ENGINEERING</div>
+          <div class="svc-icon">
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+          </div>
+          <h3>AI Application Engineering</h3>
+          <p>
+            Architect and develop end-to-end AI applications by integrating Large Language Models, Python-based backend
+            systems, and
+            intelligent APIs. Implement prompt engineering, context management, structured outputs, and reliable
+            AI-powered
+            workflows to transform complex requirements into scalable solutions.
+          </p>
+          <div class="svc-pills">
+            <span class="svc-pill">Pydantic</span>
+            <span class="svc-pill">LLM Integration</span>
+            <span class="svc-pill">Context Engineering</span>
+          </div>
+        </div>
+
+        <div class="svc-card reveal">
+          <div class="svc-num">02 // GENERATIVE AI & RAG</div>
+          <div class="svc-icon">
+            <i class="fa-solid fa-table-columns"></i>
+          </div>
+          <h3>Retrieval-Augmented Generation Systems</h3>
+          <p>
+            Engineer knowledge-grounded AI applications using document ingestion, intelligent text chunking, embedding
+            generation,
+            vector indexing, and semantic retrieval. Develop RAG pipelines with retrieval optimization, reranking,
+            source
+            attribution, and evaluation to improve response relevance and reduce unsupported outputs.
+          </p>
+          <div class="svc-pills">
+            <span class="svc-pill">Qdrant</span>
+            <span class="svc-pill">Document Processing</span>
+            <span class="svc-pill">Semantic Search</span>
+          </div>
+        </div>
+
+        <div class="svc-card reveal">
+          <div class="svc-num">03 // Claude AI Engineer</div>
+          <div class="svc-icon">
+            <i class="fa-solid fa-chart-pie"></i>
+          </div>
+          <h3>Claude Transformation Engineer</h3>
+          <p>
+            Designing and implementing intelligent AI solutions using Claude, agentic workflows, context engineering,
+            and MCP to
+            streamline business operations and accelerate digital transformation.
+          </p>
+          <div class="svc-pills">
+            <span class="svc-pill">Agentic AI Development</span>
+            <span class="svc-pill">Context Engineering & Prompt Engineering</span>
+            <span class="svc-pill">Model Context Protocol (MCP)</span>
+            <span class="svc-pill">AI Workflow Automation</span>
+          </div>
+        </div>
+
+        <div class="svc-card reveal">
+          <div class="svc-num">04 // MACHINE LEARNING & DATA SCIENCE</div>
+          <div class="svc-icon">
+            <i class="fa-solid fa-file-lines"></i>
+          </div>
+          <h3>Predictive Modeling & Data Intelligence</h3>
+          <p>
+            Develop data-driven solutions through exploratory data analysis, statistical techniques, feature
+            engineering, and
+            supervised machine learning. Build predictive models, evaluate performance using appropriate metrics,
+            identify patterns,
+            and translate analytical findings into actionable insights through interactive dashboards.
+          </p>
+          <div class="svc-pills">
+            <span class="svc-pill">Scikit-learn</span>
+            <span class="svc-pill">Feature Engineering</span>
+            <span class="svc-pill">Regression</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="laser-divider"></div>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <div class="wrap">
+      <div class="s-head">
+        <div class="s-label">
+          <i class="fa-solid fa-fingerprint"></i> About Me
+        </div>
+        <h2 class="chrome-text">The Person Behind the Data</h2>
+        <div class="s-laser"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <p class="about-p">
+            An AI Engineer focused on designing and developing intelligent applications that transform complex data into
+            actionable
+            insights and automate real-world business processes. Skilled in Python, Machine Learning, Generative AI,
+            Large Language
+            Models (LLMs), Retrieval-Augmented Generation (RAG), and AI Agent Development.
+          </p>
+          <p class="about-p">
+            Experienced in building AI-powered applications, intelligent automation workflows, and domain-specific
+            solutions using
+            frameworks and technologies such as Google ADK, LangChain, LangGraph, Streamlit, FastAPI, and vector
+            databases.
+            Proficient in Prompt Engineering, Context Engineering, API Integration, Data Processing, and LLM
+            Orchestration, with a
+            strong focus on developing scalable, reliable, and practical AI solutions that solve business challenges.
+          </p>
+
+          <div class="approach-title">
+            <i class="fa-solid fa-compass"></i> Engineering Approach
+          </div>
+
+          <div class="approach-grid">
+            <div class="app-card">
+              <div class="app-num">01</div>
+              <span class="app-txt">
+                Translate business challenges into AI-driven solutions by identifying requirements, defining success
+                metrics, and
+                designing intelligent application workflows.
+              </span>
+            </div>
+            <div class="app-card">
+              <div class="app-num">02</div>
+              <span class="app-txt">
+                Develop and integrate AI systems using Python, LLMs, RAG pipelines, AI agents, and structured
+                data-processing techniques
+                to deliver reliable, context-aware outputs.
+              </span>
+            </div>
+            <div class="app-card">
+              <div class="app-num">03</div>
+              <span class="app-txt">
+                Build intelligent applications and automated workflows using Generative AI, Google ADK, LangChain,
+                LangGraph, FastAPI,
+                and API integrations to improve operational efficiency and solve real-world problems.
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-column">
+          <div class="stat-item reveal">
+            <span class="stat-num" data-target="1">0</span>
+            <span class="stat-lbl">Years of Experience</span>
+          </div>
+          <div class="stat-item reveal">
+            <span class="stat-num" data-target="7">0</span>
+            <span class="stat-lbl">Projects Completed</span>
+          </div>
+          <div class="stat-item reveal">
+            <span class="stat-num" data-target="3">0</span>
+            <span class="stat-lbl">Organizations Supported</span>
+          </div>
+          <div class="stat-item reveal">
+            <span class="stat-num" data-target="7">0</span>
+            <span class="stat-lbl">Core Tools Mastered</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="laser-divider"></div>
+
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="s-head">
+        <div class="s-label">
+          <i class="fa-solid fa-briefcase"></i> Work Experience
+        </div>
+        <h2 class="chrome-text">Professional Journey</h2>
+        <div class="s-laser"></div>
+        <p>
+          Practical experience in corporate analytics, process automation, and
+          business intelligence
+        </p>
+      </div>
+
+      <div class="timeline" id="expContainer"></div>
+    </div>
+  </section>
+
+  <div class="laser-divider"></div>
+
+  <!-- EDUCATION SECTION -->
+  <section id="education">
+    <div class="wrap">
+      <div class="s-head">
+        <div class="s-label">
+          <i class="fa-solid fa-graduation-cap"></i> Education
+        </div>
+        <h2 class="chrome-text">Academic Background</h2>
+        <div class="s-laser"></div>
+        <p>
+          Academic grounding in Information Technology, systems analysis, and
+          data structures
+        </p>
+      </div>
+
+      <div class="timeline" id="eduContainer"></div>
+    </div>
+  </section>
+
+  <div class="laser-divider"></div>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="s-head">
+        <div class="s-label"><i class="fa-solid fa-bolt"></i> Stack</div>
+        <h2 class="chrome-text">Tools &amp; Technologies</h2>
+        <div class="s-laser"></div>
+        <p>
+          Production-tested stack spanning AI engineering, LLM &amp; RAG architectures, autonomous agents, and analytics
+        </p>
+      </div>
+
+      <div class="skills-grid" id="skillsContainer"></div>
+    </div>
+  </section>
+
+  <div class="laser-divider"></div>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="s-head">
+        <div class="s-label">
+          <i class="fa-solid fa-folder-open"></i> Portfolio
+        </div>
+        <h2 class="chrome-text">Selected Work</h2>
+        <div class="s-laser"></div>
+        <p>
+          End-to-end data systems — from automated survey pipelines to machine
+          learning apps
+        </p>
+      </div>
+
+      <div class="proj-grid" id="projContainer"></div>
+    </div>
+  </section>
+
+  <div class="laser-divider"></div>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="s-head">
+        <div class="s-label">
+          <i class="fa-solid fa-envelope"></i> Connect
+        </div>
+        <h2 class="chrome-text">Initiate Collaboration</h2>
+        <div class="s-laser"></div>
+        <p>
+          Available for full-time AI Engineer , LLM Developer, and
+          Vibe Coding.
+        </p>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-info-card reveal">
+          <div class="contact-card-top">
+            <span class="mono-label" style="color: var(--crimson-400);">// GET IN TOUCH DIRECTLY</span>
+            <h3>Let's Build Something High-Impact</h3>
+            <p>
+              From engineering context-aware LLM applications and multimodal RAG pipelines to developing autonomous AI
+              agents and intelligent workflow automation, I focus on transforming complex challenges into practical,
+              scalable AI solutions.
+            </p>
+          </div>
+
+          <div class="contact-grid-details">
+            <div class="contact-detail-item">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-circle-dot" style="color: var(--status-active);"></i>
+              </div>
+              <div class="contact-text-wrap">
+                <span class="contact-text-lbl">Status</span>
+                <span class="contact-text-val">Open for Opportunities</span>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-text-wrap">
+                <span class="contact-text-lbl">Direct Email</span>
+                <a href="mailto:sanketyadav7314@gmail.com" class="contact-text-val">
+                  sanketyadav7314@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon-box">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div class="contact-text-wrap">
+                <span class="contact-text-lbl">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/sanket-yadav-6a1a2b272/?skipRedirect=true" target="_blank"
+                  rel="noopener noreferrer" class="contact-text-val">
+                  linkedin.com/in/sanket-yadav
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-text-wrap">
+                <span class="contact-text-lbl">Location</span>
+                <span class="contact-text-val">Mumbai, India</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-actions">
+            <a href="https://www.linkedin.com/in/sanket-yadav-6a1a2b272/?skipRedirect=true" target="_blank"
+              rel="noopener noreferrer" class="btn btn-primary">
+              <i class="fa-brands fa-linkedin-in"></i> Connect on LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-inner">
+        <p class="footer-copy">
+          &copy; 2026 Sanket U Yadav &middot; Engineered with Obsidian &middot; Chrome &middot; Crimson
+        </p>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main Logic Script -->
+  <script src="scripts.js"></script>
+</body>
+
+</html>
